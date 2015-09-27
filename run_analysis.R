@@ -95,11 +95,8 @@ tidy_galaxy_data <- summarize_each(grouped_data, "mean")
 
 
 ## Creating the second independent dataset
-if(file.exists("tidy_galaxy_data.txt"))
-        rm("./tidy_galaxy_data.txt")
-
 setwd(initial.dir)
-write.table(tidy_galaxy_data, "tidy_galaxy_data.txt")
+write.table(tidy_galaxy_data, paste("tidy_galaxy_data_",Sys.Date(),".txt", sep = ""), col.names = TRUE, row.names = FALSE)
 
 detach("package:data.table")
 detach("package:dplyr")
