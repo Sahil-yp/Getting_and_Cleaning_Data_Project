@@ -26,7 +26,7 @@ To create the tidy data file from the raw data:
 2. Run the *run_analysis.R* script
 
 ### Cleaning of the Data
-The script file compiles the raw data into a single dataset and cleans all the data variables except the required mean and standard deviation values. The readme.md document describes the steps involved in the cleaning in greater detail.
+The script file compiles the raw data into a single dataset and cleans all the data variables except the required mean and standard deviation values. The [readme.md](https://github.com/Sahil-yp/Getting_and_Cleaning_Data_Project.git) document describes the steps involved in the cleaning in greater detail.
 
 ### Descriptions of the Tidy Dataset Variables
 *Note: All the data except the subject_id, activity, and activity_description has been normalized and bounded within[-1, 1]. Therefore, being a ratio of the same unit factors, the data values observed in the data set have no units.*
