@@ -1,0 +1,164 @@
+---
+title: Codebook
+output: 
+  html_document: 
+    keep_md: yes
+---
+
+## Project Description
+Accelerometer data from the Samsung Galaxy S smartphone was retrieved and cleaned to create a tidy dataset. 
+
+## Study Design and Data Processing
+### Collection of Raw Data
+The raw data was downloaded from the following location
+[Raw Data](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+
+### Notes on the Original Raw Data
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
+
+## Creating the Tidy Data File
+
+### Steps to Create the Tidy Data File
+To create the tidy data file from the raw data:  
+1. Download and unzip the raw data in your working directory (If an unzipped folder is not placed in the working directory the scrip will automatically download and unzip the data in the working directory).  
+2. Run the *run_analysis.R* script
+
+### Cleaning of the Data
+The script file compiles the raw data into a single dataset and cleans all the data variables except the required mean and standard deviation values. The readme.md document describes the steps involved in the cleaning in greater detail.
+
+### Descriptions of the Tidy Dataset Variables
+*Note: All the data except the subject_id, activity, and activity_description has been normalized and bounded within[-1, 1]. Therefore, being a ratio of the same unit factors, the data values observed in the data set have no units.*
+
+### subject_id:
+Volunteer ID number
+
+### activity:
+Code number for the activity performed by the volunteer when the representing data was collected.
+
+### activity_description
+Description of the activity code noted in the preceeding column.
+
+### tBodyAcc_mean_XYZ
+Mean value of the time domain body acceleration signal in the X, Y and Z direction.
+
+### tBodyAcc_std_XYZ
+Standard Deviation of the time domain body acceleration signal in the X, Y and Z direction.
+
+### tGravityAcc_mean_XYZ
+Mean value of the time domain gravity acceleration signal in the X, Y and Z direction.
+
+### tGravityAcc_std_XYZ
+Standard Deviation of the time domain gravity acceleration signal in the X, Y and Z direction.
+
+### tBodyAccJerk_mean_XYZ
+Mean value of the time domain body acceleration jerk signal in the X, Y and Z direction.
+
+### tBodyAccJerk_std_XYZ
+Standard deviation of the time domain body angular velocity jerk in the X, Y and Z direction.
+
+### tBodyGyro_mean_XYZ
+Mean value of the time domain body angular velocity in the X, Y and Z direction.
+
+### tBodyGyro_std_XYZ
+Standard devation of the time domain body angular velocity in the X, Y and Z direction.
+
+### tBodyGyroJerk_mean_XYZ
+Mean value of the time domain body angular velocity jerk signal in the X, Y and Z direction.
+
+### tBodyGyroJerk_std_XYZ
+Standard deviation of the time domain body angular velocity jerk signal in the X, Y and Z direction.
+
+### tBodyAccMag_mean
+Mean value of the magnitude of the time domain body acceleration three-dimensional signals calculated using the Euclidean norm. 
+
+### tBodyAccMag_std
+Standard deviation of the magnitude of the time domain body acceleration three-dimensional signals calculated using the Euclidean norm. 
+
+### tGravityAccMag_mean
+Mean value of the magnitude of the time domain gravity acceleration three-dimensional signals calculated using the Euclidean norm. 
+
+### tGravityAccMag_std
+Standard deviation of the magnitude of the time domain body acceleration three-dimensional signals calculated using the Euclidean norm. 
+
+### tBodyAccJerkMag_mean
+Mean value of the magnitude of the time domain body acceleration three-dimensional jerk signals calculated using the Euclidean norm. 
+
+### tBodyAccJerkMag_std
+Standard deviation of the magnitude of the time domain body acceleration three-dimensional jerk signals calculated using the Euclidean norm. 
+
+### tBodyGyroMag_mean
+Mean value of the magnitude of the time domain body angular velocity three-dimensional signals calculated using the Euclidean norm. 
+
+### tBodyGyroMag_std
+Standard deviation of the magnitude of the time domain body angular velocity three-dimensional signals calculated using the Euclidean norm. 
+
+### tBodyGyroJerkMag_mean
+Mean value of the magnitude of the time domain body angular velocity three-dimensional jerk signals calculated using the Euclidean norm. 
+
+### tBodyGyroJerkMag_std
+Standard deviation of the magnitude of the time domain body angular velocity three-dimensional jerk signals calculated using the Euclidean norm. 
+
+### fBodyAcc_mean_XYZ
+Mean value of the frequency domain body acceleration signal in the X, Y and Z direction.
+
+### fBodyAcc_std_XYZ
+Standard deviation of the frequency domain body acceleration signal in the X, Y and Z direction.
+
+### fBodyAcc_meanFreq_XYZ
+Frequency domain body acceleration signal in the X, Y and Z direction, using mean frequency.
+
+### fBodyAccJerk_mean_XYZ
+Mean value of the frequency domain body acceleration jerk signal in the X, Y and Z direction.
+
+### fBodyAccJerk_std_XYZ
+Standard deviation of the frequency domain body acceleration jerk signal in the X, Y and Z direction.
+
+### fBodyAccJerk_meanFreq_XYZ
+Frequency domain body acceleration jerk signal in the X, Y and Z direction, using mean frequency.
+
+### fBodyGyro_mean_XYZ
+Mean value of the frequency domain body angular velocity in the X, Y and Z direction.
+
+### fBodyGyro_std_XYZ
+Standard deviation of the frequency domain body angular velocity in the X, Y and Z direction.
+
+### fBodyGyro_meanFreq_XYZ
+Frequency domain body angular velocity signal in the X, Y and Z direction, using mean frequency.
+
+### fBodyAccMag_mean
+Mean value of the magnitude of the frequency domain body acceleration three-dimensional signals calculated using the Euclidean norm. 
+
+### fBodyAccMag_std
+Standard deviation of the magnitude of the frequency domain body acceleration three-dimensional signals calculated using the Euclidean norm. 
+
+### fBodyAccMag_meanFreq
+The magnitude of the frequency domain body acceleration three-dimensional signals calculated using the Euclidean norm, and mean frequency. 
+
+### fBodyBodyAccJerkMag_mean
+Mean value of the magnitude of the frequency domain body acceleration three-dimensional jerk signals calculated using the Euclidean norm. 
+
+### fBodyBodyAccJerkMag_std
+Standard deviation of the magnitude of the time domain body acceleration three-dimensional jerk signals calculated using the Euclidean norm. 
+
+### fBodyBodyAccJerkMag_meanFreq
+The magnitude of the frequency domain body acceleration three-dimensional jerk signals calculated using the Euclidean norm, and mean frequency. 
+
+### fBodyBodyGyroMag_mean
+Mean value of the magnitude of the frequency domain body angular velocity three-dimensional signals calculated using the Euclidean norm. 
+
+### fBodyBodyGyroMag_std
+Standard deviation of the magnitude of the frequency domain body angular velocity three-dimensional signals calculated using the Euclidean norm. 
+
+### fBodyBodyGyroMag_meanFreq
+The magnitude of the frequency domain body angular velocity three-dimensional signals calculated using the Euclidean norm, and mean frequency. 
+
+### fBodyBodyGyroJerkMag_mean
+Mean value of the magnitude of the frequency domain body angular velocity three-dimensional jerk signals calculated using the Euclidean norm, and mean frequency. 
+
+### fBodyBodyGyroJerkMag_std
+Standard deviaiton of the magnitude of the frequency domain body angular velocity three-dimensional jerk signals calculated using the Euclidean norm, and mean frequency. 
+
+### fBodyBodyGyroJerkMag_meanFreq
+The magnitude of the frequency domain body angular velocity three-dimensional jerk signals calculated using the Euclidean norm, and mean frequency. 
