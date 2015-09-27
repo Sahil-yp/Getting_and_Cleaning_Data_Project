@@ -77,9 +77,11 @@ setcolorder(raw_data, c(1, 2, length(raw_data), 3:(length(raw_data)-1)))
 
 ## --------------------------------REQUIREMENT 4--------------------------------
 
-## Cleaning the column names by removing "()" and replacing "-" with "_"
+## Cleaning the column names by removing "()", replacing "-" with "_", and
+## correcting the "BodyBody" naming of the few end variables to "Body"
 setnames(raw_data, (gsub("[()]", "", names(raw_data)))) %>%
-        setnames(gsub("[-]", "_", names(raw_data)))
+        setnames(gsub("[-]", "_", names(raw_data))) %>%
+        setnames(gsub("BodyBody", "Body", names(raw_data)))
 
 
 ## --------------------------------REQUIREMENT 5--------------------------------

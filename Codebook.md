@@ -131,29 +131,29 @@ Standard deviation of the magnitude of the frequency domain body acceleration th
 ### fBodyAccMag_meanFreq
 The magnitude of the frequency domain body acceleration three-dimensional signals calculated using the Euclidean norm, and mean frequency. 
 
-### fBodyBodyAccJerkMag_mean
+### fBodyAccJerkMag_mean
 Mean value of the magnitude of the frequency domain body acceleration three-dimensional jerk signals calculated using the Euclidean norm. 
 
-### fBodyBodyAccJerkMag_std
+### fBodyAccJerkMag_std
 Standard deviation of the magnitude of the time domain body acceleration three-dimensional jerk signals calculated using the Euclidean norm. 
 
-### fBodyBodyAccJerkMag_meanFreq
+### fBodyAccJerkMag_meanFreq
 The magnitude of the frequency domain body acceleration three-dimensional jerk signals calculated using the Euclidean norm, and mean frequency. 
 
-### fBodyBodyGyroMag_mean
+### fBodyGyroMag_mean
 Mean value of the magnitude of the frequency domain body angular velocity three-dimensional signals calculated using the Euclidean norm. 
 
-### fBodyBodyGyroMag_std
+### fBodyGyroMag_std
 Standard deviation of the magnitude of the frequency domain body angular velocity three-dimensional signals calculated using the Euclidean norm. 
 
-### fBodyBodyGyroMag_meanFreq
+### fBodyGyroMag_meanFreq
 The magnitude of the frequency domain body angular velocity three-dimensional signals calculated using the Euclidean norm, and mean frequency. 
 
-### fBodyBodyGyroJerkMag_mean
+### fBodyGyroJerkMag_mean
 Mean value of the magnitude of the frequency domain body angular velocity three-dimensional jerk signals calculated using the Euclidean norm, and mean frequency. 
 
-### fBodyBodyGyroJerkMag_std
+### fBodyGyroJerkMag_std
 Standard deviaiton of the magnitude of the frequency domain body angular velocity three-dimensional jerk signals calculated using the Euclidean norm, and mean frequency. 
 
-### fBodyBodyGyroJerkMag_meanFreq
+### fBodyGyroJerkMag_meanFreq
 The magnitude of the frequency domain body angular velocity three-dimensional jerk signals calculated using the Euclidean norm, and mean frequency. 
